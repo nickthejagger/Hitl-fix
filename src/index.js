@@ -133,6 +133,7 @@ module.exports = {
         const event = {
           type: 'text',
           platform: session.platform,
+          user: {id: session.userId},
           raw: { to: session.userId, message: message },
           text: message
         }
